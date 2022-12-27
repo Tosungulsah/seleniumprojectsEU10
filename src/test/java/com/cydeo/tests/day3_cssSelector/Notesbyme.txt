@@ -1,0 +1,9 @@
+<label class="login-item-checkbox-label" for="USER_REMEMBER">Remember me on this computer</label>
+
+now we are creating  label[for='USER_REMEMBER']
+
+second way for css , just for id and class ===
+tagName.classValue
+tagName#idValue
+
+label.login-item-checkbox-label
