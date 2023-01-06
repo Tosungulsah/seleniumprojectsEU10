@@ -5,6 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -38,6 +39,8 @@ TC #1: Information alert practice
         Alert alert= driver.switchTo().alert();
         alert.accept();
         WebElement resultText= driver.findElement(By.xpath("//p[@id='result']"));
-
+        Assert.assertTrue(resultText.isDisplayed(),"Result text is not displayed");
     }
+   // @Test
+    //public void
 }
