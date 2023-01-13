@@ -20,7 +20,7 @@ public class WebTableUtils {
         WebElement customerDateCell = driver.findElement(By.xpath(locator));
         return customerDateCell.getText();
     }
-
+/*
 //    public static String returnOrderDate2(WebDriver driver, String customerName){
 //        return driver.findElement(By.xpath("//td[.='"+customerName+"']/following-sibling::td[3]")).getText();
 //    }
@@ -33,7 +33,7 @@ public class WebTableUtils {
     //• Arg3: String expectedOrderDate
     //This method should accept above-mentioned arguments and internally assert
     //expectedOrderDate matching actualOrderDate.
-
+*/
     public static void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
 
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
