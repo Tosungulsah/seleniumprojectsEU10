@@ -34,7 +34,7 @@ public class WebTableUtils {
     //This method should accept above-mentioned arguments and internally assert
     //expectedOrderDate matching actualOrderDate.
 */
-    public static void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
+    public static  void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
 
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
         WebElement customerDateCell = driver.findElement(By.xpath(locator));

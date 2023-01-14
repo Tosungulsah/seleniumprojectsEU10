@@ -2,8 +2,10 @@ package com.cydeo.tests.day7_webtables_utilities_javafaker;
 
 import com.cydeo.tests.utilities.BrowserUtils;
 import com.cydeo.tests.utilities.WebDriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -35,6 +37,8 @@ public class T1_WindowHandling {
             //4. Create a logic to switch to the tab where Etsy.com is open
 
             BrowserUtils.switchWindowAndVerify(driver, "etsy", "Etsy");
+            WebElement acceptButton= driver.findElement(By.xpath(" //button[@class='wt-btn wt-btn--filled wt-mb-xs-0']"));
+            acceptButton.click();
         }
     }
     

@@ -69,7 +69,12 @@ Helpdesk2@cybertekschool.com  UserUser
         //6. Verify title is as expected:
         //Expected: Portal
         //BrowserUtils.sleep(2);
+
         BrowserUtils.verifyTitle(driver, "(1) Portal");
+
+        WebElement acceptButton= driver.findElement(By.xpath(" //button[@class='wt-btn wt-btn--filled wt-mb-xs-0']"));
+        acceptButton.click();
+
 
     }
 }

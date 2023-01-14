@@ -37,7 +37,7 @@ TC #1: Information alert practice
 
         Thread.sleep(2000);
         Alert alert= driver.switchTo().alert();
-        alert.accept();
+        alert.accept(); // dismiss, sendKeys("")
         WebElement resultText= driver.findElement(By.xpath("//p[@id='result']"));
         Assert.assertTrue(resultText.isDisplayed(),"Result text is not displayed");
     }

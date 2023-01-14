@@ -39,8 +39,9 @@ public class T1_warmup {
         WebElement bobsDate= driver.findElement(By.xpath("//table[@class='SampleTable']//tr[7]//td[5]"));
         String actualDate= bobsDate.getText();
         System.out.println("actualDate = " + actualDate);
-        String expecetedDate= "12/31/2021";
-        Assert.assertEquals(actualDate,expecetedDate,"Date verification failed");
+        String expectedDate= "12/31/2021";
+        Assert.assertEquals(actualDate,expectedDate,"Date verification failed");
+
     }
 
 }
