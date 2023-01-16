@@ -33,8 +33,13 @@ WebDriver driver;
     @Test
     public void google_search_test(){
         WebElement googleSearchBox= driver.findElement(By.xpath("//input[@name='q']"));
-        googleSearchBox.sendKeys("apple"+ Keys.ENTER);
 
-        Assert.assertEquals(driver.getTitle(),"apple - Google Search", "Title verification failed");
+
+
+
+       // googleSearchBox.sendKeys("apple"+ Keys.ENTER);
+        googleSearchBox.sendKeys(ConfigurationReader.getProperty("searchValue")+ Keys.ENTER);
+        String expectedTitle=ConfigurationReader.getProperty("searchValue")+" - Google Search";
+        Assert.assertEquals(driver.getTitle(),expectedTitle, "Title verification failed");
 }
 }
