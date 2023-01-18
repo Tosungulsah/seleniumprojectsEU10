@@ -20,5 +20,16 @@ public class JavaFakerPractise {
         System.out.println("faker.numerify(\"312-###-###\") = " + faker.numerify("312-###-###"));
 
         System.out.println("faker.letterify(\"?????????\") = " + faker.letterify("?????????"));
+
+        System.out.println("faker.letterify(\"??-???-???\") = " + faker.letterify("??-???-???"));
+
+        // letter and numeric both
+        System.out.println("faker.bothify(\"#?#?#?\") = " + faker.bothify("#?#?#?"));
+
+        System.out.println("faker.finance().creditCard() = " + faker.finance().creditCard());
+
+        System.out.println("faker.chuckNorris().fact().replaceAll(\"Chhuck Norris\",\"Muhtar\") = " + faker.chuckNorris().fact().replaceAll("Chuck Norris", "Muhtar"));
+
+
     }
 }

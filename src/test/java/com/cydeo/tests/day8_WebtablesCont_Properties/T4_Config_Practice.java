@@ -25,6 +25,8 @@ WebDriver driver;
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.google.com");
+
+
         Thread.sleep(1000);
         WebElement acceptButton= driver.findElement(By.xpath("//div[@class='QS5gu sy4vM']"));
         acceptButton.click();
